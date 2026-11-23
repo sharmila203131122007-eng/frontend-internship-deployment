@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #0f172a;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #2563eb;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px #00000010;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .projects .card {
+      width: 280px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>My Portfolio</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hello, I'm a Frontend Developer 👋</h1>
+    <p>I build responsive and user-friendly websites.</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I'm learning frontend development and building projects using
+        HTML, CSS, and JavaScript.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio.</p>
+      </div>
+
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>A weather application using API data.</p>
+      </div>
+
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>A modern website landing page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: github.com/yourusername</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 My Portfolio | Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
